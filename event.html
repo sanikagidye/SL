@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Exp5</title>
+ <body onload="load()" onresize="resize()">
+ <button onclick="submit()" value="click">click</button>
+ <button onmouseover="mouseover()" value="submit">mouseover</button>
+ <button onmouseout="mouseout()" value="submit">mouseout</button>
+ <form onreset="resetForm()">
+ Enter name:<input type="text">
+ <input type="reset">
+ </form>
+ </body>
+ <script>
+ function load()
+ {
+ alert("loaded")
+ }
+ function resize()
+ {
+ alert("page resized")
+ }
+ function submit()
+ {
+ alert ("triggered by onclick")
+}
+ function mouseover()
+ {
+ document.body.style.background="#FBE3B0";
+ }
+ function mouseout()
+ {
+ document.body.style.background="#B689B2";
+ }
+ function resetForm()
+ {
+ alert("This form was reset")
+ }
+ </script>
+</head>
+</html>
