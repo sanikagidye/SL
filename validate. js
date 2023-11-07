@@ -1,0 +1,40 @@
+document.addEventListener("DOMContentLoaded", function () { 
+
+ const form = document.getElementById("registration-form"); 
+
+ const resetButton = document.getElementById("reset"); 
+
+ form.addEventListener("submit", function (event) { 
+
+ event.preventDefault(); 
+
+ // const name = document.getElementById("name").value; 
+
+ // const roll = document.getElementById("roll").value; 
+
+ const email = document.getElementById("email").value; 
+
+ const mobile = document.getElementById("mobile").value; 
+
+ if (mobile.length === 10 && email.includes("@") && email.includes(".")) { 
+
+ alert("Registration successful!"); 
+
+ // You can add code here to submit the form data to a server if needed. 
+
+ } else { 
+
+ alert("Invalid mobile number or email address."); 
+
+ } 
+
+ }); 
+
+ resetButton.addEventListener("click", function () { 
+
+ form.reset(); 
+
+ }); 
+
+}); 
+
